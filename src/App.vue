@@ -1,9 +1,15 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-//import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-This is my first VueJS project.
-</template>
-
+    <div id="app">
+      <MainGrid />
+    </div>
+  </template>
+  
+  <script>
+  import MainGrid from './components/MainGrid.vue';
+  
+  export default {
+    components: {
+      MainGrid,
+    },
+  };
+  </script>
