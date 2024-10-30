@@ -1,13 +1,15 @@
 
 <template>
-    <div class="banner">
-      <div class="banner-content">
+    <div class="button">
+      <div class="button-content">
         <h2>{{ title }}</h2>
-        <button>Shop Now-></button>
+        <button @click="shopNow">Shop Now</button>
       </div>
-      <img :src="image" :alt="title" class="banner-image" />
+      <img :src="image" :alt="title" class="button-image" />
     </div>
   </template>
+
+
   
   <script>
   export default {
@@ -15,11 +17,18 @@
       title: String,
       image: String,
     },
+
+    name: "Button1",
+    methods: {
+    shopNow() {
+      alert("Let's shop: Make your Breakfast Healthy and Easy");
+    }
+  }
   };
   </script>
   
   <style scoped>
-  .banner {
+  .button {
     display: flex;
     padding: 50px;
     border-radius: 8px;
@@ -27,27 +36,32 @@
     margin: 10px;
     width: 400px;
   }
-  .banner-content {
+  .button-content {
     flex: 1;
   }
-  .banner h2 {
+  .button h2 {
     font-size: 20px;
     margin-bottom: 10px;
   }
-  .banner p {
+  .button p {
     font-size: 10px;
     color: #555;
   }
-  .banner button {
+  .button button {
     padding: 8px 16px;
     background-color: #0a8f08;
     color: #fff;
     border: none;
     border-radius: 4px;
   }
-  .banner-image {
+  .button button:hover {
+  background-color: #bec0bf;
+  }
+  
+  .button-image {
     width: 100px;
     height: 100px;
   }
+  
   </style>
   

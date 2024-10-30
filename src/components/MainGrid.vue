@@ -10,7 +10,7 @@
           :quantity="product.quantity"
         />
       </div>
-      <div class="banner-list">
+      <div class="button-list">
         <Banner
           v-for="(banner, index) in banners"
           :key="index"
@@ -74,7 +74,7 @@
     overflow-x: auto;
     padding: 10px 0;
   }
-  .banner-list {
+  .button-list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
