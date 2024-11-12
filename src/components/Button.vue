@@ -8,8 +8,6 @@
       <img :src="image" :alt="title" class="button-image" />
     </div>
   </template>
-
-
   
   <script>
   export default {
@@ -62,6 +60,5 @@
     width: 100px;
     height: 100px;
   }
-  
   </style>
   
