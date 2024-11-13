@@ -43,22 +43,24 @@
           // { image: 'src/components/Cake & Milk.png', name: 'Cake & Milk', quantity: '54 items' },
           // { image: 'src/components/Orange.png', name: 'Orange', quantity: '63 items' },
         ],
+
         banners: [
-          // {
-          //   title: 'Everyday Fresh & Clean with Our Products',
-          //   image: 'src/components/onion.png',
-          // },
+          {
+            title: 'Everyday Fresh & Clean with Our Products',
+            image: 'src/components/onion.png',
+          },
 
-          // {
-          //   title: 'Make your Breakfast Healthy and Easy',
-          //   image: 'src/components/strawberry.png',
-          // },
+          {
+            title: 'Make your Breakfast Healthy and Easy',
+            image: 'src/components/strawberry.png',
+          },
 
-          // {
-          //   title: 'The best Organic Products Online',
-          //   image: 'src/components/salad.png',
-          // },
+          {
+            title: 'The best Organic Products Online',
+            image: 'src/components/salad.png',
+          },
         ],
+        
       };
     },
     methods: {
@@ -68,7 +70,7 @@
         this.products =products;
       },
       async getPromotion() {
-        const responsePromotion = await axis.get('http://localhost:3000/api/promotions');
+        const responsePromotion = await axis.get('http://localhost:3001/api/promotions');
         const promotions = responsePromotion.data;
         this.promotions = promotions;
       }

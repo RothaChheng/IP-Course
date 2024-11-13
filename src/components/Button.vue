@@ -16,7 +16,7 @@
       image: String,
     },
 
-    name: "Button1",
+    name: "btn1",
     methods: {
     shopNow() {
       alert("Let's shop: Make your Breakfast Healthy and Easy");

@@ -8,21 +8,19 @@
   <script>
   // import axis from 'axios';
   import MainGrid from './components/MainGrid.vue';
-  import Button1 from "./components/Button.vue";
+  import btn1 from "./components/Button.vue";
   import axios from 'axios';
-  
+
   export default {
     name: "ParentComponent",
     components: {
       MainGrid,
-      Button1,
-      
+      btn1
     },
     data() {
         return {
-            // tp02
-            MainGrid: [],
-            Button1: []
+            promotions: [],
+            categories: []
         };
     },
     mounted() {
