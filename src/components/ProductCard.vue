@@ -1,41 +1,66 @@
 <template>
-    <div class="product-card">
-      <img :src="image" :alt="name" />
-      <h3>{{ name }}</h3>
-      <p>{{ quantity }}</p>
+    <div class="container" :style="{ backgroundColor: color }">
+      <div class="product-card">
+        <img :src="image" alt="name">
+      </div>
+
+      <div class="product-card-text">
+        <h3>{{ name }}</h3>
+        <p>{{ quantity }}</p>
+      </div>
     </div>
   </template>
   
   <script>
   export default {
+    name: "Category",
     props: {
+      id: String,
       image: String,
       name: String,
       quantity: String,
+      color:String
     },
   };
   </script>
   
   <style scoped>
+  .container {
+    color: black;
+    border: 1px solid greenyellow;
+    border-radius: 10px;
+    width: 130px;
+    height: 180px;
+  }
+
   .product-card {
-    width: 120px;
-    padding: 10px;
-    text-align: center;
-    background-color: #e2bebe;
-    border-radius: 8px;
+    width: auto;
+    height: auto;
+    border-radius: 10px ;
+    display: flex;
+    justify-content: center;
   }
+
   .product-card img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    margin-bottom: 8px;
+    width: 80%;
+    height: 100%;
   }
-  .product-card h3 {
-    font-size: 15px;
-    margin: 5px;
+
+  .product-card-text{
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    padding: 3px;
   }
-  .product-card p {
-    color: #000000;
+
+  .product-card-text h3{
+    display: flex;
+    justify-content: center;
+  }
+  .product-card-text p{
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
     font-size: 12px;
   }
   </style>

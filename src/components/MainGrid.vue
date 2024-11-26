@@ -24,11 +24,11 @@
   
   <script>
    import axis from 'axios';
-  import ProductCard from './ProductCard.vue';
-  import Banner from './Button.vue';
+   import ProductCard from './ProductCard.vue';
+   import Banner from './Button.vue';
   
   export default {
-    components: { ProductCard, Banner },
+    components: { ProductCard, Banner},
     data() {
       return {
         products: [
@@ -47,17 +47,17 @@
         banners: [
           {
             title: 'Everyday Fresh & Clean with Our Products',
-            image: 'src/components/onion.png',
+            image: 'src/components/PNG/onion.png',
           },
 
           {
             title: 'Make your Breakfast Healthy and Easy',
-            image: 'src/components/strawberry.png',
+            image: 'src/components/PNG/strawberry.png',
           },
 
           {
             title: 'The best Organic Products Online',
-            image: 'src/components/salad.png',
+            image: 'src/components/PNG/salad.png',
           },
         ],
         
@@ -91,13 +91,13 @@
   .product-list {
     display: flex;
     gap: 10px;
-    overflow-x: auto;
-    padding: 10px 0;
+    overflow-x:auto;
+    padding: 10px;
   }
   .button-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 35px;
     margin-top: 20px;
   }
   </style>
