@@ -1,16 +1,23 @@
 <template>
-<header>
+<div class="Header">
   <nav>
     <router-link to="/page1" class="nav-link">Page 1</router-link>
     <router-link to="/page2" class="nav-link">Page 2</router-link>
     <router-link to="/page3" class="nav-link">Page 3</router-link>
   </nav>
-</header>
+</div>
 </template>
 
 <style scoped>
+.Header{
+  text-align: center;
+  width: 80rem;
+  border: 1px solid black;
+  height: 40px;
+  padding: 10px;
+}
 .nav-link{
-  margin: 0 10px;
+  margin:20px;
   color: black;
   text-decoration: none;
 }
@@ -18,58 +25,6 @@
   color: red;
   font-weight: bold;
 }
-  /* .header {
-    padding: 20px;
-    width: 800px;
-    margin-right: 1000px;
-  }
-  .menu-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .categories {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-  }
-  .categories li {
-    cursor: pointer;
-  }
-  .categories li.active {
-    font-weight: bold;
-    color: red;
-  } */
+
 </style>
 
-<!-- <script>
-export default{
-    name: "MenuComponent",
-    props: {
-      title: {
-        type: String,
-        // default: "Menu Title", 
-      },
-      categories: {
-        type: Array,
-        default: () => [],
-      },
-      items: {
-        type: Array,
-        default: () => [],
-      },
-    },
-    data() {
-      return {
-        selectedCategory: "Page1",
-      };
-    },
-    methods: {
-      onCategoryClick(category) {
-        this.selectedCategory = category;
-        this.$emit("category-selected", category);
-      },
-    },
-};
-</script> -->

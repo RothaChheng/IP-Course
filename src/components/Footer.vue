@@ -1,17 +1,15 @@
-<script>
-
-</script>
-
 <template>
-<footer>
+<div class="Footer">
     Footer
-</footer>
+</div>
 </template>
 
 <style scoped>
-footer{
+.Footer{
+    width: 80rem;
+    border: 1px solid;
+    height: 40px;
     text-align: center;
     padding: 10px;
-    background-color: #f4f4f4;
 }
 </style>
